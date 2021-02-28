@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
+
+    <style>
+        td{
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,6 +18,18 @@
     <h1>Tablas</h1>
 
     <table>
+        <caption>HORAIO DE CLASES</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>M</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>8:30 - 9:30</td>
             <td>Matemáticas</td>
@@ -38,7 +56,7 @@
         </tr>
         <tr>
             <td>11:20 - 11:45</td>
-            <td>Recreo</td>
+            <td colspan="5">Recreo</td>
         </tr>
         <tr>
             <td>11:45 - 12:40</td>
@@ -50,11 +68,10 @@
         </tr>
         <tr>
             <td>12:40 - 13:35</td>
-            <td>Música</td>
             <td>Matemáticas</td>
             <td>Sociales</td>
             <td>Matemáticas</td>
-            <td>Matemáticas</td>
+            <td>Tecnología</td>
         </tr>
         <tr>
             <td>8:30 - 9:30</td>
@@ -64,7 +81,14 @@
             <td>Matemáticas</td>
             <td>Matemáticas</td>
         </tr>
-    </table>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">Total de asignaturas</td>
+            <td>12</td>
+        </tr>
+    </tfoot>
+</table>
 
 </body>
 
